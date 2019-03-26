@@ -44,10 +44,12 @@ class Application extends Component {
       snapshot.forEach(doc =>{
         const id = doc.id;
         const data = doc.data();
+
+        console.log({ id, data })
       })
     });
 
-    console.log({id, data})
+    
   }
 
   handleCreate = post => {
